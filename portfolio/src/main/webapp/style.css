@@ -1,7 +1,70 @@
-* {
+body {
     margin: 0;
     padding: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    text-align: center;
 } 
+
+
+.Banner {
+    background-color: #414141;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: grid;
+    grid-auto-columns: 75% 25%;
+
+}
+
+.InfoPanel {
+    grid-column: 1;
+    background-color: #303030;
+    backdrop-filter: blur(25px); 
+}
+
+.PhotoPanel {
+    grid-column: 2;
+    background-color: #ec625f;
+}
+
+.PhotoPanel > img {
+    width: 100%;
+    height: auto;
+}
+
+.NameText {
+    color: #ec625f;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.HiText {
+    color: white;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.InfoText {
+    color: white;
+    font-size: 2.5em;
+}
+
+.NameH {
+    padding-top: 10vh;
+    text-align: center;
+}
+
+.InfoH{
+    padding-top: 10vh;
+    text-align: center;
+}
+
+
+
+
+
 
 .Skills {
     display: flex;
@@ -117,7 +180,6 @@
 	width: 100%;
 	height: 100%;
 	z-index: 1;
-	/*     background: rgba(255,0,0,.5); */
 }
 
 .news-card__image {
@@ -128,7 +190,6 @@
 	transition: transform 2s ease;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
-	position: relative;
 	z-index: -1;
 }
 
@@ -282,7 +343,7 @@
 }
 
 
-.socialContainer .card .icon .fa {
+.socialContainer .card .icon .fa, .socialContainer .card .icon .fab  {
     position: absolute;
     top: 50%;
     left: 50%;
