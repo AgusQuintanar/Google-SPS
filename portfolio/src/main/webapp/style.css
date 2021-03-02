@@ -316,7 +316,6 @@ body {
     position: relative;
     border-radius: 10px;
     cursor: pointer;
-
 }
 
 .socialContainer .card .icon {
@@ -364,7 +363,7 @@ body {
 }
 
 .socialContainer .card .face {
-    width: 45vh;
+    width: 24.4vw;
     height: 200px;
     transition: 0.5s;
 }
