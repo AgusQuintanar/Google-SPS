@@ -57,11 +57,16 @@ body {
 }
 
 .InfoH{
-    padding-top: 10vh;
+    padding-top: 6vh;
     text-align: center;
 }
 
-
+#phraseContainer {
+    color: rgb(177, 177, 177);
+    padding-top: 10vh;
+    font-size: 1.5em;
+    font-style: italic;
+}
 
 
 
