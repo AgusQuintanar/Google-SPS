@@ -294,6 +294,12 @@
         </div>
 
         <div class="Social">
+
+
+
+
+
+
             <div class="socialContainer">
                 <div class="card">
                     <div class="face face1">
@@ -309,13 +315,11 @@
                 </div>
                 <div class="card">
                     <div class="face face1">
-                        <a href="https://mailto:agusquintanar17@gmail.com/" target="_blank">
-                            <div class="content">
-                                <div class="icon">
-                                    <i class="fa fa-envelope-square" aria-hidden="true"></i>
-                                </div>
+                        <div class="content" onclick="document.getElementById('contactForm').style.display='block'">
+                            <div class="icon">
+                                <i class="fa fa-envelope-square" aria-hidden="true"></i>
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
@@ -331,6 +335,53 @@
                 </div>
             </div>
         </div>
+
+        <div id="contactForm" class="background">
+                <div class="container">
+                    <div class="screen">
+                        <div class="screen-header">
+                            <div class="screen-header-left">
+                                <div class="screen-header-button close"></div>
+                                <div class="screen-header-button maximize"></div>
+                                <div class="screen-header-button minimize"></div>
+                            </div>
+                            <div class="screen-header-right">
+                                <div class="screen-header-ellipsis"></div>
+                                <div class="screen-header-ellipsis"></div>
+                                <div class="screen-header-ellipsis"></div>
+                            </div>
+                        </div>
+                        <div class="screen-body">
+                       
+                            <div class="screen-body-item">
+                                <div class="app-title">
+                                    <span>CONTACT ME</span>
+                                </div>
+                                <form action="/form-handler" method="POST" class="app-form">
+                                    <div class="app-form-group">
+                                        <input name="name-input" class="app-form-control" placeholder="Name">
+                                    </div>
+                                    <div class="app-form-group">
+                                        <input name="email-input" class="app-form-control" placeholder="Email">
+                                    </div>
+                                    
+                                    <div class="app-form-group message">
+                                        <input name="message-input" type="textarea" class="app-form-control" placeholder="Message">
+                                    </div>
+                                    <div class="app-form-group buttons">
+                                        <button class="app-form-button" type="button"
+                                            onclick="document.getElementById('contactForm').style.display='none'">CANCEL</button>
+                                        <button class="app-form-button" type="submit">SEND</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
 </body>
 
 
